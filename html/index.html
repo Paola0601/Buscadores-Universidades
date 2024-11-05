@@ -2,25 +2,32 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Consulta de Universidades Licenciadas</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Universidades Licenciadas del Peru</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 </head>
 <body>
-    <h1>Consulta de Universidades Licenciadas</h1>
-    <form action="/cgi-bin/busqueda_universidades.pl" method="POST">
-        <label for="nombre">Nombre Universidad:</label>
-        <input type="text" id="nombre" name="nombre">
-        <br>
-        <label for="licenciamiento">Periodo Licenciamiento:</label>
-        <input type="text" id="licenciamiento" name="licenciamiento">
-        <br>
-        <label for="departamento">Departamento Local:</label>
-        <input type="text" id="departamento" name="departamento">
-        <br>
-        <label for="programa">Denominación Programa:</label>
-        <input type="text" id="programa" name="programa">
-        <br>
-        <button type="submit">Buscar</button>
-    </form>
+    <div class="contenedor">
+        <h1>Consulta de Universidades Licenciadas del Peru</h1>
+        <form action="cgi-bin/buscador.pl" method="POST">
+            <div class="campo">
+                <label for="keyword_nombre">Nombre Universidad:</label>
+                <input type="text" id="keyword_nombre" name="nombreUniversidad" placeholder="Ej. UNIVERSIDAD PERUANA CAYETANO HEREDIA">
+            </div>
+            <div class="campo">
+                <label for="keyword_periodo">Periodo Licenciamiento:</label>
+                <input type="text" id="keyword_periodo" name="tiempo" placeholder="Ej. 10">
+            </div>
+            <div class="campo">
+                <label for="keyword_departamento">Departamento Local:</label>
+                <input type="text" id="keyword_departamento" name="Departamento" placeholder="Ej. LIMA">
+            </div>
+            <div class="campo">
+                <label for="keyword_programa">Denominación Programa:</label>
+                <input type="text" id="keyword_programa" name="Programa" placeholder="Ej. MAESTRÍA">
+            </div>
+            <button type="submit" class="btn">Buscar</button>
+        </form>
+    </div>
 </body>
 </html>
