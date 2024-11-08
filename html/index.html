@@ -10,23 +10,20 @@
     <div class="contenedor">
         <h1>Consulta de Universidades Licenciadas del Peru</h1>
         <form action="cgi-bin/buscador.pl" method="POST">
-            <div class="campo">
-                <label for="keyword_nombre">Nombre Universidad:</label>
-                <input type="text" id="keyword_nombre" name="nombreUniversidad" placeholder="Ej. UNIVERSIDAD PERUANA CAYETANO HEREDIA">
+            <div class="Palabra clave ">
+                <label for="keyword">Palabra clave:</label>
+                <input type="text" id="keyword" name="keyword" required>
             </div>
-            <div class="campo">
-                <label for="keyword_periodo">Periodo Licenciamiento:</label>
-                <input type="text" id="keyword_periodo" name="tiempo" placeholder="Ej. 10">
+            <div class="CampoArchivo">
+                <label for="search_by">Buscar por:</label>
+                <select id="search_by" name="search_by">
+                    <option value="nombre_universidad">Nombre Universidad</option>
+                    <option value="periodo">Periodo Licenciamiento</option>
+                    <option value="departamento_local">Departamento Local</option>
+                    <option value="denominacion_programa">Denominación Programa</option>
+                </select>
             </div>
-            <div class="campo">
-                <label for="keyword_departamento">Departamento Local:</label>
-                <input type="text" id="keyword_departamento" name="Departamento" placeholder="Ej. LIMA">
-            </div>
-            <div class="campo">
-                <label for="keyword_programa">Denominación Programa:</label>
-                <input type="text" id="keyword_programa" name="Programa" placeholder="Ej. MAESTRÍA">
-            </div>
-            <button type="submit" class="btn">Buscar info</button>
+            <button type="submit" class="botonBuscar">Buscar</button>
         </form>
     </div>
 </body>
