@@ -7,3 +7,29 @@ use CGI::Carp qw(fatalsToBrowser);
 my $cgi =CGI->new;
 $cgi->charset('UTF-8');
 print $cgi->header;
+print <<HTML;
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <title>Consulta Universidades Licenciadas</title>
+  </head>
+  <body>
+    <div class="ResultadoDebusqueda">
+      <div class="TituloDeLaPagina">
+        <b>Resultados de la búsqueda</b>
+    </div>
+      <div class="TablaDeResultados">
+HTML
+print <<HTML;
+      </div>
+    <div class="RetrocederAlBuscador">
+    <a href="../index.html">Volver a buscar</a>
+</div>
+
+    </div>
+  </body>
+</html>
+HTML
