@@ -39,10 +39,19 @@ my $SeEncontro=0;
 while (my $filaUniversidad = <$miArchivo>) {
 
 my @camposDelArchivo=split(/\|/,$filaUniversidad);
-
-
-
-
+ if ($campoABuscar eq 'nombre_universidad' && uc($camposDelArchivo[1]) =~ /\Q$palabraBusqueda\E/i) {
+        imprimir_fila(\@camposDelArchivo);
+        $SeEncontro = 1;}
+  elsif ($campoABuscar eq 'periodo' && $camposDelArchivo[4] =~ /\Q$palabraBusqueda\E/) {
+        imprimir_fila(\@camposDelArchivo);
+        $SeEncontro = 1;
+    } elsif ($campoABuscar eq 'departamento_local' && uc($camposDelArchivo[10]) =~ /\Q$palabraBusqueda\E/i) {
+        imprimir_fila(\@camposDelArchivo);
+        $SeEncontro = 1;
+    } elsif ($campoABuscar eq 'denominacion_programa' && uc($camposDelArchivo[16]) =~ /\Q$palabraBusqueda\E/i) {
+        imprimir_fila(\@camposDelArchivo);
+        $SeEncontro = 1;
+    }
 }
 print <<HTML;
       </div>
