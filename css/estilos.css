@@ -22,10 +22,7 @@ h1 {
 .CampoArchivo {
     margin-bottom: 15px;
 }
-label {
-    display: block;
-    font-weight: bold;
-}
+
 
 input[type="text"] {
     width: 100%;
@@ -33,4 +30,16 @@ input[type="text"] {
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-top: 5px;
+}
+
+.botonBuscar {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1570a5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
 }
