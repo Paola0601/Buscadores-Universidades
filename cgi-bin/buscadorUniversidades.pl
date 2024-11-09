@@ -36,7 +36,7 @@ my $campoABuscar=$cgi->param('campoABuscar');
 print $palabraBusqueda;
 print $campoABuscar;
 #Abrimos el documento CSV
-open (my $miArchivo,"<","ProgramasdeUniversidades.cvs");
+open (my $miArchivo,"<","ProgramasdeUniversidades.csv");
 my $header = <$miArchivo>;
 # Imprime la tabla de resultados 
 print <<BLOCK;
@@ -100,7 +100,7 @@ close($miArchivo);
 if(!$SeEncontro)
 
 {
-print "<p>No se encontro la busqueda.</p>\n"
+print "<p>No se encontro resultados de la busqueda.</p>\n"
 }
 print <<HTML;
       </div>
