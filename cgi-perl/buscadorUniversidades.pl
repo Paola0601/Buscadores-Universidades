@@ -30,6 +30,13 @@ my $campoABuscar=$cgi->param('campoABuscar');
 #Abrimos el documento CSV
 open (my $miArchivo,"<","PogramasdeUniversidades.cvs");
 
+
+
+
+my $SeEncontro=0;
+ 
+
+while (my $filaUniversidad = <$miArchivo>) {}
 print <<HTML;
       </div>
     <div class="RetrocederAlBuscador">
