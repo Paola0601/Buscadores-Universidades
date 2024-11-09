@@ -33,8 +33,8 @@ HTML
 #Recibimos  los parametros del formulario
 my $palabraBusqueda=$cgi->param('palabraBusqueda');
 my $campoABuscar=$cgi->param('campoABuscar');
-print $palabraBusqueda;
-print $campoABuscar;
+print "$palabraBusqueda";
+print "\n$campoABuscar";
 #Abrimos el documento CSV
 open (my $miArchivo,"<","ProgramasdeUniversidades.csv");
 my $header = <$miArchivo>;
@@ -75,9 +75,6 @@ my $SeEncontro=0;
 
 while (my $filaUniversidad = <$miArchivo>) {
    chomp($filaUniversidad);
- print "<p>Línea del archivo: $filaUniversidad</p>\n";
-
-    print "<p>Comparando '$palabraBusqueda' con campo en '$campoABuscar'</p>\n";
 my @camposDelArchivo=split(/\|/,$filaUniversidad);
 
  if ($campoABuscar eq 'nombre_universidad' && uc($camposDelArchivo[1]) =~ /\Q$palabraBusqueda\E/i) {
