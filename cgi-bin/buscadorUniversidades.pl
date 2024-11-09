@@ -6,7 +6,13 @@ use CGI::Carp qw(fatalsToBrowser);
 
 my $cgi =CGI->new;
 $cgi->charset('UTF-8');
-print $cgi->header(-type => 'text/html', -charset => 'UTF-8');
+print $cgi->header(
+    -type => 'text/html',
+    -charset => 'UTF-8',
+    -expires => '-1',
+    -pragma  => 'no-cache',
+    -cache_control => 'no-store, no-cache, must-revalidate'
+);
 
 print <<HTML;
 <!DOCTYPE html>
@@ -31,7 +37,7 @@ print $palabraBusqueda;
 print $campoABuscar;
 #Abrimos el documento CSV
 open (my $miArchivo,"<","ProgramasdeUniversidades.cvs");
-
+my $header = <$miArchivo>;
 # Imprime la tabla de resultados 
 print <<BLOCK;
 <table>
@@ -69,12 +75,11 @@ my $SeEncontro=0;
 
 while (my $filaUniversidad = <$miArchivo>) {
    chomp($filaUniversidad);
+ print "<p>Línea del archivo: $filaUniversidad</p>\n";
 
+    print "<p>Comparando '$palabraBusqueda' con campo en '$campoABuscar'</p>\n";
 my @camposDelArchivo=split(/\|/,$filaUniversidad);
-print "<p>Comparando en nombre_universidad: $camposDelArchivo[1]</p>\n" if $campoABuscar eq 'nombre_universidad';
-    print "<p>Comparando en periodo: $camposDelArchivo[4]</p>\n" if $campoABuscar eq 'periodo';
-    print "<p>Comparando en departamento_local: $camposDelArchivo[10]</p>\n" if $campoABuscar eq 'departamento_local';
-    print "<p>Comparando en denominacion_programa: $camposDelArchivo[16]</p>\n" if $campoABuscar eq 'denominacion_programa';
+
  if ($campoABuscar eq 'nombre_universidad' && uc($camposDelArchivo[1]) =~ /\Q$palabraBusqueda\E/i) {
         imprimir_fila(\@camposDelArchivo);
         $SeEncontro = 1;}
