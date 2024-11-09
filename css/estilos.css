@@ -12,3 +12,22 @@ body {
 background-color:rgb(230, 229, 241)
 
 }
+h1 {
+    text-align: center;
+    color: #333;
+}
+.Palabra_clave {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
