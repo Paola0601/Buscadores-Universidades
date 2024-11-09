@@ -33,6 +33,7 @@ open (my $miArchivo,"<","PogramasdeUniversidades.cvs");
 
 
 
+
 my $SeEncontro=0;
  
 
@@ -53,12 +54,13 @@ my @camposDelArchivo=split(/\|/,$filaUniversidad);
         $SeEncontro = 1;
     }
 }
+
+
+close($miArchivo);
 if(!$SeEncontro)
 
 {
 print "<p>No se encontro la busqueda.</p>\n"
-
-
 }
 print <<HTML;
       </div>
@@ -70,3 +72,7 @@ print <<HTML;
   </body>
 </html>
 HTML
+sub imprimir_fila{
+  my($campos)=@_;
+  
+}
