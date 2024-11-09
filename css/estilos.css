@@ -50,3 +50,9 @@ input[type="text"] {
 .botonBuscar:hover {
     background-color: #92c6e9;
 }
+.miTitulo{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
