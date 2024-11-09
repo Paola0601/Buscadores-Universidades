@@ -30,7 +30,7 @@ my $campoABuscar=$cgi->param('campoABuscar');
 print $palabraBusqueda;
 print $campoABuscar;
 #Abrimos el documento CSV
-open (my $miArchivo,"<","PogramasdeUniversidades.cvs");
+open (my $miArchivo,"<","ProgramasdeUniversidades.cvs");
 
 # Imprime la tabla de resultados 
 print <<BLOCK;
