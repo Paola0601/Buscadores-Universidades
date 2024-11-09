@@ -56,7 +56,7 @@ my @camposDelArchivo=split(/\|/,$filaUniversidad);
 if(!$SeEncontro)
 
 {
-print "No se encontro la busqueda."
+print "<p>No se encontro la busqueda.</p>\n"
 
 
 }
