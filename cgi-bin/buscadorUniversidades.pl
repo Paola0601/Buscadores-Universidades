@@ -68,8 +68,13 @@ my $SeEncontro=0;
  
 
 while (my $filaUniversidad = <$miArchivo>) {
+   chomp($filaUniversidad);
 
 my @camposDelArchivo=split(/\|/,$filaUniversidad);
+print "<p>Comparando en nombre_universidad: $camposDelArchivo[1]</p>\n" if $campoABuscar eq 'nombre_universidad';
+    print "<p>Comparando en periodo: $camposDelArchivo[4]</p>\n" if $campoABuscar eq 'periodo';
+    print "<p>Comparando en departamento_local: $camposDelArchivo[10]</p>\n" if $campoABuscar eq 'departamento_local';
+    print "<p>Comparando en denominacion_programa: $camposDelArchivo[16]</p>\n" if $campoABuscar eq 'denominacion_programa';
  if ($campoABuscar eq 'nombre_universidad' && uc($camposDelArchivo[1]) =~ /\Q$palabraBusqueda\E/i) {
         imprimir_fila(\@camposDelArchivo);
         $SeEncontro = 1;}
