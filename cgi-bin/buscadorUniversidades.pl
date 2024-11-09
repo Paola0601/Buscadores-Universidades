@@ -33,8 +33,9 @@ HTML
 #Recibimos  los parametros del formulario
 my $palabraBusqueda=$cgi->param('palabraBusqueda');
 my $campoABuscar=$cgi->param('campoABuscar');
-print "$palabraBusqueda";
-print "\n$campoABuscar";
+print "<p>Texto ingresado: $palabraBusqueda</p>";
+print "<p>Buscar Por: $campoABuscar</p>";
+
 #Abrimos el documento CSV
 open (my $miArchivo,"<","ProgramasdeUniversidades.csv");
 my $header = <$miArchivo>;
