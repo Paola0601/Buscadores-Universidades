@@ -52,6 +52,7 @@ print <<BLOCK;
     <th>Nombre filial</th>
     <th>Departamento Filial</th>
     <th>Provincia Filial</th>
+    <th>Codigo Local</th>
     <th>Departamento Local</th>
     <th>Provincia Local</th>
     <th>Distrito Local</th>
