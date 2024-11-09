@@ -5,11 +5,12 @@ body {
 }
 .contenedor
 {
-    max-width: 600px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
 
-background-color:rgb(230, 229, 241)
 
 }
 h1 {
@@ -36,6 +37,7 @@ input[type="text"] {
     margin-top: 5px;
 }
 
+
 .botonBuscar {
     display: inline-block;
     width: 100%;
@@ -56,3 +58,48 @@ input[type="text"] {
     margin-bottom: 20px;
     text-align: center;
 }
+
+
+
+.ResultadoDebusqueda{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+.ResultadoDebusqueda table th, 
+.ResultadoDebusqueda table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+.ResultadoDebusqueda table th {
+    background-color: #38a9cc;
+    color: white;
+    font-weight: bold;
+}
+
+
+.ResultadoDebusqueda table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.ResultadoDebusqueda table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.RetrocederAlBuscador a {
+    text-decoration: none;
+    color: #24acce;
+    font-weight: bold;
+}
+
+.RetrocederAlBuscadora:hover {
+    color: #333;
+}
+
