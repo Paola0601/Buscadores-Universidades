@@ -53,6 +53,13 @@ my @camposDelArchivo=split(/\|/,$filaUniversidad);
         $SeEncontro = 1;
     }
 }
+if(!$SeEncontro)
+
+{
+print "No se encontro la busqueda."
+
+
+}
 print <<HTML;
       </div>
     <div class="RetrocederAlBuscador">
