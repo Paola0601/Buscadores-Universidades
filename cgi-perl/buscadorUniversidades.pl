@@ -26,6 +26,10 @@ HTML
 #Recibimos  los parametros del formulario
 my $palabraBusqueda=$cgi->param('palabraBusqueda');
 my $campoABuscar=$cgi->param('campoABuscar');
+
+#Abrimos el documento CSV
+open (my $miArchivo,"<","PogramasdeUniversidades.cvs");
+
 print <<HTML;
       </div>
     <div class="RetrocederAlBuscador">
