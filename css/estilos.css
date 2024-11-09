@@ -106,10 +106,10 @@ select {
    
 }
 .textoBusqueda {
-    font-size: 1.5rem; /* Ajusta el tamaño según lo que necesites */
-    font-weight: bold; /* Opcional, si quieres que el texto sea más destacado */
-    color: #333; /* Cambia el color si lo deseas */
-    margin-bottom: 10px; /* Añade margen si necesitas separar el texto de otros elementos */
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 10px; 
 }
 
 

@@ -103,7 +103,7 @@ print "<p>No se encontro resultados de la busqueda.</p>\n"
 print <<HTML;
       </div>
     <div class="RetrocederAlBuscador">
-    <a href="../index.html">Volver a buscar</a>
+     <a href="../index.html" class="botonVolver">Volver a buscar</a>
 </div>
 
     </div>
