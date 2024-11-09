@@ -3,26 +3,50 @@ body {
     background-color: #309cb8;
     color: #333;
     font-size: 1rem;
+    margin: 0; 
+    padding: 0;
+}
+.presentacion {
+    width: 100%;
+    margin: 0;
+    padding: 20px; 
+    background-color: #1b8499; 
+    color: white; 
+    box-sizing: border-box;
+    text-align: center;
+
+
 }
 .contenedor
 {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 600px;
+    margin: 10git 0px auto;
     padding: 20px;
     border-radius: 8px;
     background-color: #ffffff;
 
 
+    
+}
+.contenedor label
+{
+    font-size: 1.5rem;
+
 }
 h1 {
     text-align: center;
-    color: #ffff;
+    color: #ffffff;
     font-size: 2rem;
 }
 h2 {
     text-align: center;
     color: #ffff;
     font-size: 1rem;
+}
+.contenedor h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
 }
 .Palabra_clave {
     margin-bottom: 15px;
