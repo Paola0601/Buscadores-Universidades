@@ -37,6 +37,16 @@ input[type="text"] {
     margin-top: 5px;
 }
 
+select {
+    padding: 10px;             
+    font-size: 16px;          
+    width: 100%;              
+    max-width: 300px;          
+    border: 1px solid #ccc;   
+    border-radius: 5px;      
+    background-color: #f8f9fa;  
+}
+
 
 .botonBuscar {
     display: inline-block;
@@ -100,6 +110,6 @@ input[type="text"] {
 }
 
 .RetrocederAlBuscadora:hover {
-    color: #333;
+    color: #161515;
 }
 

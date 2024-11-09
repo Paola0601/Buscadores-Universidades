@@ -26,7 +26,7 @@ print <<HTML;
   <body>
     <div class="ResultadoDebusqueda">
       <div class="TituloDeLaPagina">
-        <b>Resultados de la búsqueda</b>
+        <h1>Resultados de la búsqueda</h1>
     </div>
       <div class="TablaDeResultados">
 HTML
@@ -103,7 +103,7 @@ print "<p>No se encontro resultados de la busqueda.</p>\n"
 print <<HTML;
       </div>
     <div class="RetrocederAlBuscador">
-    <a href="../index.html">Volver a buscar</a>
+    <p href="../index.html">Volver a buscar</p>
 </div>
 
     </div>
