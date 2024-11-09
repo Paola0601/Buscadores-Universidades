@@ -28,7 +28,7 @@ print <<HTML;
       <div class="TituloDeLaPagina">
         <h1>Resultados de la búsqueda</h1>
     </div>
-      <div class="TablaDeResultados">
+      <div class="TablaDeResultados.  ">
 HTML
 #Recibimos  los parametros del formulario
 my $palabraBusqueda=$cgi->param('palabraBusqueda');
@@ -59,8 +59,7 @@ print <<BLOCK;
     <th>Latitud Ubicacion</th>
     <th>Longitud ubicacion</th>
     <th>Tipo Autorización</th>
-    <th>Denominacion</th>
-    <th>Programa</th>
+    <th>Denominacion Programa</th>
     <th>Tipo Nivel Académico</th>
     <th>Nivel Académico</th>
     <th>Codigo clase Programa</th>
