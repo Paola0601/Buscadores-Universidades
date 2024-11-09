@@ -19,6 +19,9 @@ h1 {
 .Palabra_clave {
     margin-bottom: 15px;
 }
+.CampoArchivo {
+    margin-bottom: 15px;
+}
 label {
     display: block;
     font-weight: bold;
