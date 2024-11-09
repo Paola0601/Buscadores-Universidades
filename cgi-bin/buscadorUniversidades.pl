@@ -6,7 +6,8 @@ use CGI::Carp qw(fatalsToBrowser);
 
 my $cgi =CGI->new;
 $cgi->charset('UTF-8');
-print $cgi->header;
+print $cgi->header(-type => 'text/html', -charset => 'UTF-8');
+
 print <<HTML;
 <!DOCTYPE html>
 <html lang="es">
