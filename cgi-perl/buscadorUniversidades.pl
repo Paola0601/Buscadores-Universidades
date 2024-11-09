@@ -36,7 +36,14 @@ open (my $miArchivo,"<","PogramasdeUniversidades.cvs");
 my $SeEncontro=0;
  
 
-while (my $filaUniversidad = <$miArchivo>) {}
+while (my $filaUniversidad = <$miArchivo>) {
+
+my @camposDelArchivo=split(/\|/,$filaUniversidad);
+
+
+
+
+}
 print <<HTML;
       </div>
     <div class="RetrocederAlBuscador">
