@@ -30,7 +30,35 @@ my $campoABuscar=$cgi->param('campoABuscar');
 #Abrimos el documento CSV
 open (my $miArchivo,"<","PogramasdeUniversidades.cvs");
 
-
+# Imprime la tabla de resultados si hay datos
+print <<BLOCK;
+<table>
+  <tr>
+    <th>Código</th>
+    <th>Nombre</th>
+    <th>Tipo de Gestión</th>
+    <th>Estado</th>
+    <th>Periodo</th>
+    <th>Codigo filial</th>
+    <th>Nombre filial</th>
+    <th>Departamento Filial</th>
+    <th>Provincia Filial</th>
+    <th>Departamento Local</th>
+    <th>Provincia Local</th>
+    <th>Distrito Local</th>
+    <th>Latitud Ubicacion</th>
+    <th>Longitud ubicacion</th>
+    <th>Tipo Autorización</th>
+    <th>Denominacion</th>
+    <th>Programa</th>
+    <th>Tipo Nivel Académico</th>
+    <th>Nivel Académico</th>
+    <th>Codigo clase Programa</th>
+    <th>Nombre clase Programa</th>
+    <th>Tipo de autorización programa</th>
+    <th>Tipo de autorización programa local</th>
+  </tr>
+BLOCK
 
 
 
