@@ -23,6 +23,9 @@ print <<HTML;
     </div>
       <div class="TablaDeResultados">
 HTML
+#Recibimos  los parametros del formulario
+my $palabraBusqueda=$cgi->param('palabraBusqueda');
+my $campoABuscar=$cgi->param('campoABuscar');
 print <<HTML;
       </div>
     <div class="RetrocederAlBuscador">
